@@ -22,14 +22,43 @@ public class Workshop04 {
         
         System.out.println( "========= 주문 =========" );
         System.out.print( " 아메리카노 주문 수량 : " );
-        int americano  = getUserInput();
+        int americano = getUserInput();
         int amePrice = americano * 2000;
         System.out.print( " 카페라떼 주문 수량 : " );
-        int latte  = getUserInput();
+        int latte = getUserInput();
+        int lattePrice = latte * 3000;
         System.out.print( " 베이글 주문 수량 : " );
         int bagel = getUserInput();
+        int bagelPrice = bagel * 1500;
         System.out.print( " 크림치즈 주문 수량 : " );
         int creamCheese = getUserInput();
+        int creamPrice = creamCheese * 500;
+        int everyPrice = amePrice + lattePrice + bagelPrice + creamPrice;
+        
+        System.out.println( "========= 금액 =========" );
+        System.out.println( "아메리카노 : " + amePrice);
+        System.out.println( "라떼 : " + lattePrice);
+        System.out.println( "베이글 : " + bagelPrice);
+        System.out.println( "크림치즈 : " + creamPrice);
+        
+        System.out.println("=========================");
+        System.out.println("총 구매 금액 : " + everyPrice + "원");
+        
+       
+        
+        if (everyPrice >= 30000)
+        {
+        	System.out.println("포인트 적립 : " + everyPrice / 50 + "점");
+        }
+        else if (everyPrice >= 12000)
+        {
+        	System.out.println("포인트 적립 : " + everyPrice / 100 + "점");
+        }
+        else
+        {
+        	System.out.println("포인트가 적립되지 않았습니다.");
+        }
+        
     }
     
     public static int getUserInput() {

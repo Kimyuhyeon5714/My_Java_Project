@@ -22,10 +22,12 @@ public class Workshop05 {
         double opera= getUserInput();
         System.out.print( "배드민턴 성적을 입력하세요 : " );
         double badminton = getUserInput();
+        gpa = (computer + java + engineMath + opera + badminton) / 5;
         System.out.println( "==============================" );
         //평점을 구하는 식은 각과목의 점수의 합 / 과목수
+       
         System.out.println( "평점은 "+gpa +"점 입니다." );
-        if(gpa >= 3.7 && computer > 2.5) {
+        if(gpa >= 3.7 && computer > 2.5 && engineMath > 2.5 && opera > 2.5 && badminton > 2.5) {
         	System.out.println("다음 학기 장학금 대상자입니다.");
         }
     }

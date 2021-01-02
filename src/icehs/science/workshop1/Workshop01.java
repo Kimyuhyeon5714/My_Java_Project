@@ -5,6 +5,12 @@ package icehs.science.workshop1;
 public class Workshop01 {
  
  public static void main( String[] args ) {
+	 
+	 int num1 = 542145;
+	 
+	 int num2 = 9534488;
+	 
+	 System.out.println("주민등록번호 : " + num1 + "-" + num2);
      
      
  }
