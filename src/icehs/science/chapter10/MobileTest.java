@@ -4,6 +4,8 @@ public class MobileTest {
 
 	public static void main(String[] args) {
 		Mobile[] phones = {new Galaxy(), new IPhone()};
+		((Galaxy)phones[0]).setOsVersion("안드로이드 오래요");
+		((IPhone)phones[1]).setColor("흰색");
 		phones[0].call(5);
 		phones[0].charge(30);
 		phones[1].call(10);

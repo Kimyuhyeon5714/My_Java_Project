@@ -5,5 +5,12 @@ public class IPhone extends Mobile{
 	public IPhone() {
 		super("IPhone");
 	}
-
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+		System.out.println("IPhone : " + color);
+	}
+	
 }

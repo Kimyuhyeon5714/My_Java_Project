@@ -5,5 +5,12 @@ public class Galaxy extends Mobile{
 	public Galaxy() {
 		super ("Galaxy");
 	}
+	public String getOsVersion() {
+		return osVersion;
+	}
+	public void setOsVersion(String osVersion) {
+		this.osVersion = osVersion;
+		System.out.println("Galaxy : "+osVersion);
+	}
 
 }
