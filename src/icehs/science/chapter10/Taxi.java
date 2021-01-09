@@ -1,6 +1,6 @@
 package icehs.science.chapter10;
 
-public class Taxi {
+public class Taxi extends Car{
 	private int maxNum;
 
 	public int getMaxNum() {

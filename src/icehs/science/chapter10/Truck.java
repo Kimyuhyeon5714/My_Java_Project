@@ -1,6 +1,6 @@
 package icehs.science.chapter10;
 
-public class Truck {
+public class Truck extends Car{
 	private int maxWeight;
 
 	public int getMaxWeight() {
