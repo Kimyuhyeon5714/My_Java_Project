@@ -61,7 +61,7 @@ public class Vehicle {
 
 	public void displayInfo() {
 		System.out.println("-------------------------------------------");
-		System.out.println(" 모 델 명 : " + this.modelName);
+		System.out.println(" 모델명 : " + this.modelName);
 		System.out.println(" 최고속도 : " + this.maxSpeed + "km/h");
 		System.out.println(" 최대정원 : " + this.numberLimit + "명");
 	}

@@ -19,7 +19,7 @@ public class Car extends Vehicle{
 	}
 
 	
-
+	@Override
 	public void displayInfo() {
 		super.displayInfo();
 		System.out.println(" Æò±Õ¿¬ºñ : " + this.mileage + "km/l");

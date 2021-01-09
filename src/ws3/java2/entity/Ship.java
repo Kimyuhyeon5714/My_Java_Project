@@ -22,8 +22,9 @@ public class Ship extends Vehicle {
 	}
 
 	
-
+	@Override
 	public void displayInfo() {
-		System.out.println(" ¹è ¼ö ·® : " + this.replacement + "Åæ");
+		super.displayInfo();
+		System.out.println(" ¹è¼ö·® : " + this.replacement + "Åæ");
 	}
 }
